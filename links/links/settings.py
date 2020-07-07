@@ -27,7 +27,7 @@ SECRET_KEY = 'sb#jbf_d!o*wnwakar!&h@#utr24vj$g$w06m_n*6j!)17$cp@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nastylinks.herokuapp.com']
 
 
 # Application definition
