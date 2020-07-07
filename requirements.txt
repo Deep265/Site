@@ -13,9 +13,11 @@ configparser==5.0.0
 cryptography==2.9.2
 decorator==4.4.2
 dj-config-url==0.1.1
+dj-database-url==0.5.0
 Django==3.0.3
 django-bootstrap4==2.0.1
 django-braces==1.14.0
+django-heroku==0.3.1
 EasyProcess==0.3
 emoji==0.5.4
 Faker==4.0.3
@@ -37,6 +39,7 @@ misaka==2.1.1
 Pillow==7.1.2
 plyer==1.4.3
 protobuf==3.12.2
+psycopg2==2.8.5
 pycparser==2.20
 python-dateutil==2.8.1
 python-telegram-bot==12.7
