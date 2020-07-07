@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="container">
+    <div class="row">
+
+
+            {% for i in profile_list %}
+        <div class="col-md-4 col-lg-4 col-sm-6 p-3">
+            <!-- Link Card -->
+            <div class="card">
+                {% if i.image_link %}
+                    <img class="card-img-top img-fluid" src="{{ i.image_link }}">
+                    {% else %}
+                     <h4><img class="card-image-top img-fluid" src="{{ i.img.url }}"></h4>
+                    {% endif %}
+                <!-- card title -->
+                <div class="card-title"><a href="{% url 'site_links:detail' pk=i.pk %}">{{ i.name }}</a> </div>
+                <!-- End of card title -->
+            </div>
+            <!-- End of Link Card -->
+        </div>
+            {% endfor %}
+
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="contianer bg-light">
+    <div class="row">
+        <div class="col">
+            <!-- Title -->
+            <h2 class="display-5 text-center">{{ profile.name }}:<br>
+                {% if profile.img_link %}
+                <img src="{{ profile.img_link }}" class="img-fluid img py-3">
+                {% else %}
+              <img src="{{ profile.img.url }}" class="img-fluid img py-3">
+                {% endif %}
+            </h2>
+            <!-- End of title -->
+            <!-- Description -->
+            <div class="flex-wrap">
+                <p class="px-5">{{ profile.description }}</p>
+            </div>
+            <!-- End of Description -->
+            <div class="px-5"><p>Download Link:-<a href="{{ profile.link }}" class="link text-primary btn btn-white">{{ profile.link }}</a></p></div>
+
+            {% if request.user.is_superuser %}
+             <a class="btn btn-danger" href="{% url 'site_links:delete' pk=profile.pk %}">Delete</a>
+             <a class="btn btn-warning" href="{% url 'site_links:update' pk=profile.pk %}">Update</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

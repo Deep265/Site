@@ -1,0 +1,12 @@
+
+.img{
+  height:300px;
+  width:300px;
+}
+.link {
+   border:3px inset white;
+   padding:5px;
+   border-radius:10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
