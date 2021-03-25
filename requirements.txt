@@ -44,7 +44,7 @@ pycparser==2.20
 python-dateutil==2.8.1
 python-telegram-bot==12.7
 pytz==2019.3
-PyYAML==5.3.1
+PyYAML==5.4
 regex==2020.6.8
 requests==2.23.0
 selenium==3.141.0
